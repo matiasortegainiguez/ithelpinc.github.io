@@ -1,0 +1,38 @@
+{
+  "name": "ithelp-cdk",
+  "version": "0.0.0",
+  "description": "The IT-Help frontend.",
+  "repository": "https://github.com/wweiss/it-help.git",
+  "author": "William Weiss",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "test": "gulp test --clean",
+    "build": "gulp --clean",
+    "diff": "cdk diff",
+    "synth": "cdk synth",
+    "deploy": "cdk deploy --require-approval never",
+    "destroy": "cdk destroy"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-apigateway": "^1.86.0",
+    "@aws-cdk/aws-certificatemanager": "^1.86.0",
+    "@aws-cdk/aws-cloudfront": "^1.86.0",
+    "@aws-cdk/aws-iam": "^1.86.0",
+    "@aws-cdk/aws-lambda": "^1.86.0",
+    "@aws-cdk/aws-route53": "^1.86.0",
+    "@aws-cdk/aws-route53-targets": "^1.86.0",
+    "@aws-cdk/aws-s3": "^1.86.0",
+    "@aws-cdk/aws-s3-deployment": "^1.86.0",
+    "@aws-cdk/aws-secretsmanager": "^1.86.0",
+    "@aws-cdk/aws-sns": "^1.86.0",
+    "@aws-cdk/core": "^1.86.0",
+    "@codification/cdk-sns-email-forms": "^0.0.5",
+    "@codification/cutwater-logging": "^0.x",
+    "cdk": "^1.86.0",
+    "ithelp-site": "^0.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^9.0.0"
+  }
+}

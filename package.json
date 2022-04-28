@@ -1,0 +1,25 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "clean": "lerna run clean",
+    "build": "lerna run build",
+    "dev": "lerna run dev",
+    "storybook": "lerna run storybook",
+    "deploy": "lerna run deploy"
+  },
+  "devDependencies": {
+    "@codification/cutwater-build-web": "^0.x",
+    "del": "^5.1.0",
+    "dotenv": "^8.2.0",
+    "gulp": "^4.0.2",
+    "gulp-run-command": "^0.0.9",
+    "lerna": "^3.22.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
